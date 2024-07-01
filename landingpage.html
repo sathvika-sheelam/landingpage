@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style>
+        header{
+            height:100vh;
+            width:100%;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ83dy1Gan2zLB3qx_2arj4WUR-rX2fXO3s_A&s");
+            filter:brightness(60%);
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        nav{
+            width:100%;
+            height:100px;
+            display:flex;
+            font-weight: 100;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 4.5em;
+            letter-spacing: 2.5px;
+            font-weight: 200;
+            font-style: bold;
+            padding-top: 1.8cm;
+            padding-right: 5.5cm;
+            color:yellow
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+            padding-top: 1.3cm;
+            padding:10px 20px;
+            position:relative;
+            font-weight: 200;
+        }
+        .menu a:before{
+          content: '';
+          position: absolute;
+          top:0;
+          left:0;
+          width:0%;
+          height:100%;
+          border-bottom: 2px solid rgb(190, 130, 130);
+          transition:0.4s linear;
+        }
+        .menu a:hover:before{
+            width:90%;
+        }
+        .booking a{
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+            padding-top: 1cm;
+            padding:10px 20px;
+            background: indianred;
+        }
+        .booking a:hover{
+            background: transparent;
+            border:2px solid indianred;
+        }
+        .caption{
+            max-width: 650px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-80%);
+            text-align: center;
+            color:bisque;
+        }
+        .caption span{
+            letter-spacing: 5px;
+            font-size: 2em;;
+        }
+        
+        .caption h1{
+            font-size:4em;
+            font-style:italic;
+            color: white;
+        }
+        .caption a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding-top: 2cm;
+            padding:10px 20px;
+            background: indianred;
+            border-radius:8px;
+        }
+        .caption a:hover{
+            background: transparent;
+            border:2px solid indianred;
+        }
+        #aboutus 
+        {
+            height:80vh;
+            width:100%;
+            background-image: url("https://i.pinimg.com/736x/18/32/23/183223a3603b94a3671277fd3c789701.jpg");
+            filter:brightness(40%);
+            background-size: cover;
+            text-align: center;
+        }
+        #aboutus div>h1
+        {
+            padding-top: 1cm;;
+             font-size: 3em;
+             font-family: serif;
+             color: rgb(33, 1, 33);
+        }
+        #aboutus div>h2{
+            font-size: 2.5em;
+            font-family: serif;
+            color:rgb(106, 8, 8);
+        }
+        #aboutus section{
+            text-align: center;
+            font-size:1.65em;
+            color:black
+        }
+        #ourservices{
+            width:100%;
+            height:90vh;
+            background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7PitirMC4c8OqRGhaC5OnL9MxeCP-1y7a_g&s");
+            background-size: cover;
+            filter: brightness(60%);
+            text-align: justify;
+        }
+        #ourservices h1{
+            font-size: 3em;
+            padding-top: 1cm;
+            font-family: serif;
+            color: rgb(192, 152, 192);
+        }
+        #ourservices section{
+            font-size:1.25em;
+            color:whitesmoke;
+        }
+        #packages{
+            height:90vh;
+            width:100%;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/007/385/577/non_2x/flat-design-coffee-cup-and-coffee-beans-in-coffee-color-background-for-copy-space-free-vector.jpg");
+            filter:brightness(40%);
+            background-size: cover;
+            text-align: center;
+        }
+        #packages h1{
+
+            text-align: center;
+            font-size: 3.5em;
+            padding-top: 1cm;
+            font-family: serif;
+           color: rgb(203, 8, 190);
+        }
+        #packages p{
+            font-size: 2em;
+            color:rgb(87, 10, 10);
+            text-align: center;
+
+        }
+        #contact
+        {
+            height:80vh;
+            width:100%;
+            background-color: rgb(104, 23, 37);
+            filter:brightness(60%);
+            background-size: cover;
+            text-align: center;
+        }
+        #contact h1{
+            font-size:3.5em;
+            padding-top: 1cm;
+            font-family: serif;
+           color: rgb(229, 219, 20);
+        
+        }
+        #contact section{
+            font-size:1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+            CC!
+        </div>
+        <div class="menu">
+            <a href="#aboutus">About Us</a>
+            <a href="#ourservices">Menu</a>
+            <a href="#packages">Products</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="booking">
+            <a href="#">join us</a>
+        </div>
+        </nav>
+        <section class="caption">
+            <span><b>Savoring every sip!!</b></span>
+            <h1>COFFEE CULTURE</h1>
+            <br>
+            <a href="#">order now!</a>
+          
+        </section>
+    
+     </header>
+    <section id="aboutus">
+        <div>
+        <h1>Welcome to Cofee Culture!</h1>
+        <h2>About Us</h2>
+        </div>
+        <section>
+            <p>It takes many hands to craft the perfect cup of coffee.</p>
+            <p>Founded with a passion for excellence and a </br>commitment to our customers,CC! has </br>been a trusted cafe for serving quality and delicious items. </p>
+            <p><b>Why Choose Us?</b></p>
+            <ol></ol><li>Quality products</li>
+            <li>Experienced barista</li>
+            <li>Luxurious Environment</li>
+            <li>Affordable Prices</li></ol>
+         </section>
+    </section>
+    <section id="ourservices">
+       
+            <h1> Our Menu</h1>
+            <section>
+                <p>  CC! provides high quality services to our customers. </p>
+                <p><b style="text-decoration: underline;">  our Menu include:</b></p>
+                <p><b>  Espresso </b> &emsp;&emsp;&emsp;&emsp;299/- 
+                </p><p><b>Double Espresso</b>&emsp;&emsp;&emsp;399/- </p>
+                <p><b>  Latte </b>&emsp;&emsp;&emsp;&emsp; 199/-</p>
+                <p><b>  Americano </b>&emsp;&emsp;&emsp;&emsp;249/- </p>
+                <p><b>  Hot Chocolate</b> &emsp;&emsp;&emsp;149/- </p>
+                <p><b>  Milkshakes </b>&emsp;&emsp;&emsp;&emsp;249/-</p>
+                <p><b>  Waffles </b>&emsp;&emsp;&emsp;&emsp;169/-  </p>
+                <p><b>  Brownies</b>&emsp;&emsp;&emsp;&emsp;239/-  </p>
+                <p><b>  Cheesecake </b>&emsp;&emsp;&emsp;&emsp;369/-  </p>
+                <p><b>  Lemon Tea </b>&emsp;&emsp;&emsp;&emsp;139/-  </p>
+             </section>
+    </section>
+    <section id="packages">
+        <h1>PRODUCTS</h1>
+       
+        <p >We use high quality products exported from different parts of the world like Brazil,<br> Ethiopia ,Colombia.We use High quality coffee beans and milk products.<br>We even provide sugarfree coffee.<br>Hygiene environment and super clean equipments improve our standards.<br>Our staff are customer friendly and highly talented to serve you with delicious items.<br>Your satisfaction is our goal.  
+        </p> 
+      
+    </section>
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <section style="color: aliceblue;">
+            <p>For any kind of queries,do reach us.Dial <b style="color: rgb(244, 4, 4);">0000000000 .</b></p>
+            <p>Customer care services on above number are available 24 hours.</p>
+            <p><b style="text-decoration: underline;color:aqua">Locations:</b></p>
+            <p>Hitech-city,Hyderabad,Telangana.</p>
+            <p>Town main road,Vizag,Andhra Pradesh.</p>
+            <p>Alankar,Warangal,Telangana.</p>
+            <p>Kompally,Hyderabad,Telangana.</p>
+            <p></p>
+        </section>
+    </section>
+</body>
+</html>
